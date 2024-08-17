@@ -1,4 +1,6 @@
 pandas
 numpy
 seaborn
+matplotlib
+jinja2
 -e . #Automatcially triggers setup.py file
