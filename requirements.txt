@@ -3,4 +3,7 @@ numpy
 seaborn
 matplotlib
 jinja2
--e . #Automatcially triggers setup.py file
+scikit-learn
+catboost
+xgboost
+#-e . #Automatcially triggers setup.py file
