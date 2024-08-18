@@ -7,6 +7,7 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 from dataclasses import dataclass
 from src.components.data_transformation import DataTransformation,DataTransformationConfig
+from src.components.model_trainer import ModelTrainer,ModelTrainerConfig
 
 @dataclass # a decorator that simplifies class creation for storing data.
 class DataIngestionConfig: # Svaing the files by giving the path
@@ -43,9 +44,12 @@ class DataIngestion:
         except Exception as e:
             raise CustomException(e, sys)
         
-if __name__=="__main__":
-    obj=DataIngestion()
-    train_data, test_data = obj.initiate_data_ingestion()  # Capture the returned paths
+#if __name__=="__main__":
+    #obj=DataIngestion()
+    #train_data, test_data = obj.initiate_data_ingestion()  # Capture the returned paths
 
-    data_transformation=DataTransformation()
-    data_transformation.initiate_data_transformation(train_data,test_data)
+    #data_transformation=DataTransformation()
+    #train_arr,test_arr,_=data_transformation.initiate_data_transformation(train_data,test_data)
+
+    #model_trainer=ModelTrainer()
+    #model_trainer.initiate_model_trainer(train_arr,test_arr)
