@@ -6,4 +6,5 @@ jinja2
 scikit-learn
 catboost
 xgboost
+dill
 #-e . #Automatcially triggers setup.py file
