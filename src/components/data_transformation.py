@@ -23,9 +23,9 @@ class DataTransformation:
 
     def get_data_transformation_object(self):
         try:
-            numerical_features=['writing score','reading score']
-            categorical_features=['gender','race/ethnicity','parental level of education',
-                                  'lunch','test preparation course']
+            numerical_features=['writing_score','reading_score']
+            categorical_features=['gender','race_ethnicity','parental_level_of_education',
+                                  'lunch','test_preparation_course']
             
             numerical_pipeline=Pipeline(steps=[
                 ('imputer',SimpleImputer(strategy='median')),
