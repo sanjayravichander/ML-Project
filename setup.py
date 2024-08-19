@@ -1,10 +1,13 @@
-# With setup.py I can able to build an entire machine learning application package so that I can use it for another projects.
-# And also we can deploy it through pipeline so that everyone can use it.
+# setup.py script used in Python projects to package and distribute the code. It describes the setup configuration for the project,
+# including dependencies, and makes it easier for others to install and use the project. 
 
 #creating function for get_requirements
 from setuptools import setup, find_packages
 from typing import List
 
+# By specifying the dependencies in the requirements.txt file, which is read by the get_requirements function,
+# you ensure that anyone who installs your package also installs the necessary libraries.
+# Users can install your package using pip by pointing to the setup.py file, which will automatically handle dependencies and installation.
 def get_requirements(file_path: str) -> List[str]:
     """
     This function will return the list of requirements,
