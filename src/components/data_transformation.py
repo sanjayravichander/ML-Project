@@ -54,8 +54,8 @@ class DataTransformation:
             logging.info("Read train and test data")
 
             preprocessing_obj=self.get_data_transformation_object()
-            target_column_name="math score"
-            numerical_columns=['writing score','reading score']
+            target_column_name="math_score"
+            numerical_columns=['writing_score','reading_score']
             
             input_feature_train_df=train_df.drop(columns=[target_column_name], axis=1).copy()
             target_feature_train_df=train_df[target_column_name].copy()

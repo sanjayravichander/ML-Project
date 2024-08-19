@@ -22,7 +22,7 @@ class DataIngestion:
     def initiate_data_ingestion(self): #Initiating the Data Ingestion
         logging.info("Entered the data ingestion method or component")
         try:
-            df=pd.read_csv('C:\\Users\\DELL\\ML-Project\\notebook\\Data\\StudentsPerformance.csv')
+            df=pd.read_csv("C:\\Users\\DELL\\Downloads\\StudentsPerformance.csv")
             logging.info('Read the dataset as dataframe')
 
             os.makedirs(os.path.dirname(self.ingestion_config.train_data_path), exist_ok=True)# Creates the directory path where the train and test data files will be stored. The exist_ok=True parameter ensures that no error is raised if the directory already exists.
